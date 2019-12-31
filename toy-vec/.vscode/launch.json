@@ -1,0 +1,82 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "type": "lldb",
+        //     "request": "launch",
+        //     "name": "Debug unit tests in library 'toy-vec'",
+        //     "cargo": {
+        //         "args": [
+        //             "test",
+        //             "--no-run",
+        //             "--lib",
+        //             "--package=toy-vec"
+        //         ],
+        //         "filter": {
+        //             "name": "toy-vec",
+        //             "kind": "lib"
+        //         }
+        //     },
+        //     "args": [],
+        //     "cwd": "${workspaceFolder}"
+        // },
+        // {
+        //     "type": "lldb",
+        //     "request": "launch",
+        //     "name": "Debug example 'toy_vec_01'",
+        //     "cargo": {
+        //         "args": [
+        //             "build",
+        //             "--example=toy_vec_01",
+        //             "--package=toy-vec"
+        //         ],
+        //         "filter": {
+        //             "name": "toy_vec_01",
+        //             "kind": "example"
+        //         }
+        //     },
+        //     "args": [],
+        //     "cwd": "${workspaceFolder}"
+        // },
+        // {
+        //     "type": "lldb",
+        //     "request": "launch",
+        //     "name": "Debug unit tests in example 'toy_vec_01'",
+        //     "cargo": {
+        //         "args": [
+        //             "test",
+        //             "--no-run",
+        //             "--example=toy_vec_01",
+        //             "--package=toy-vec"
+        //         ],
+        //         "filter": {
+        //             "name": "toy_vec_01",
+        //             "kind": "example"
+        //         }
+        //     },
+        //     "args": [],
+        //     "cwd": "${workspaceFolder}"
+        // }
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug toy_vec_01",
+            "cargo": {
+                "args" : [
+                    "run",
+                    "--example",
+                    "toy_vec_01"
+                ],
+                "filter": {
+                    "name": "toy_vec_01",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
